@@ -194,8 +194,8 @@ var getGameDescription = (function(){
             "REVERSE-ENGINEERING:",
             "JAMEY PITTMAN",
             "",
-            "REMAKE:",
-            "SHAUN WILLIAMS",
+            "ADAPTED BY:",
+            "CIBRAN DOCAMPO",
         ],
         [
             "ORIGINAL ARCADE ADDON:",
@@ -204,8 +204,8 @@ var getGameDescription = (function(){
             "REVERSE-ENGINEERING:",
             "BART GRANTHAM",
             "",
-            "REMAKE:",
-            "SHAUN WILLIAMS",
+            "ADAPTED BY:",
+            "CIBRAN DOCAMPO",
         ],
         [
             "A NEW PAC-MAN GAME",
@@ -215,8 +215,8 @@ var getGameDescription = (function(){
             "COOKIE MONSTER DESIGN:",
             "JIM HENSON",
             "",
-            "PAC-MAN CROSSOVER CONCEPT:",
-            "TANG YONGFA",
+            "ADAPTED BY:",
+            "CIBRAN DOCAMPO",
         ],
         [
             "THE UNRELEASED",
@@ -227,8 +227,8 @@ var getGameDescription = (function(){
             "STEVE GOLSON'S",
             "CAX 2012 PRESENTATION",
             "",
-            "REMAKE:",
-            "SHAUN WILLIAMS",
+            "ADAPTED BY:",
+            "CIBRAN DOCAMPO",
         ],
     ];
     
@@ -9974,15 +9974,6 @@ var preNewGameState = (function() {
             practiceMode = true;
             turboMode = false;
             exitTo(selectActState);
-        });
-    menu.addSpacer(0.5);
-    menu.addTextButton("CUTSCENES",
-        function() { 
-            exitTo(cutSceneMenuState);
-        });
-    menu.addTextButton("ABOUT",
-        function() { 
-            exitTo(aboutGameState);
         });
     menu.addSpacer(0.5);
     menu.addTextButton("BACK",

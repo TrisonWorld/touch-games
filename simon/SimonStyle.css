@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+body {
+  background: #1E1E24;
+}
+
+.container {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.simon {
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+  background: none;
+  padding: none;
+  border: none;
+  margin: none;
+  box-shadow: none;
+  outline: none;
+  border-radius: 50%;
+  font-family: 'Oswald';
+  font-size: 50px;
+  -webkit-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
+  -webkit-transition: border 0.1s linear;
+  transition: border 0.1s linear;
+}
+
+#red, #green {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#red {
+  top: 0;
+}
+
+#green {
+  bottom: 0;
+}
+
+#yellow, #blue {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#yellow {
+  right: 0;
+}
+
+#blue {
+  left: 0;
+}
+
+#yellow {
+  border: #EFBD26 solid 15px;
+  color: #EFBD26;
+}
+#yellow:hover {
+  background: #EFBD26;
+  color: #1E1E24;
+}
+#yellow:hover:active {
+  -webkit-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1);
+}
+
+.clicked-yellow:before {
+  display: block;
+  content: '';
+  opacity: 0;
+  background: #EFBD26;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  -webkit-animation: click 0.4s ease-in 1;
+          animation: click 0.4s ease-in 1;
+}
+
+#red {
+  border: #D63B29 solid 15px;
+  color: #D63B29;
+}
+#red:hover {
+  background: #D63B29;
+  color: #1E1E24;
+}
+#red:hover:active {
+  -webkit-transform: translateX(-50%) scale(1.1);
+          transform: translateX(-50%) scale(1.1);
+}
+
+.clicked-red:before {
+  display: block;
+  content: '';
+  opacity: 0;
+  background: #D63B29;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  -webkit-animation: click 0.4s ease-in 1;
+          animation: click 0.4s ease-in 1;
+}
+
+#blue {
+  border: #006992 solid 15px;
+  color: #006992;
+}
+#blue:hover {
+  background: #006992;
+  color: #1E1E24;
+}
+#blue:hover:active {
+  -webkit-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1);
+}
+
+.clicked-blue:before {
+  display: block;
+  content: '';
+  opacity: 0;
+  background: #006992;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  -webkit-animation: click 0.4s ease-in 1;
+          animation: click 0.4s ease-in 1;
+}
+
+#green {
+  border: #00CC66 solid 15px;
+  color: #00CC66;
+}
+#green:hover {
+  background: #00CC66;
+  color: #1E1E24;
+}
+#green:hover:active {
+  -webkit-transform: translateX(-50%) scale(1.1);
+          transform: translateX(-50%) scale(1.1);
+}
+
+.clicked-green:before {
+  display: block;
+  content: '';
+  opacity: 0;
+  background: #00CC66;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  -webkit-animation: click 0.4s ease-in 1;
+          animation: click 0.4s ease-in 1;
+}
+
+.options {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  height: 130px;
+  width: 130px;
+}
+
+.start {
+  height: 50px;
+  width: 50px;
+  display: block;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #F1E4F3;
+  cursor: pointer;
+}
+.start i {
+  font-size: 40px;
+}
+.start:active {
+  color: #D63B29;
+}
+
+.strict {
+  position: absolute;
+  bottom: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: #F1E4F3;
+  height: 40px;
+  font-size: 25px;
+  font-family: 'Oswald';
+  left: 10px;
+}
+
+.steps {
+  display: block;
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+.steps .text {
+  margin-right: 20px;
+  font-size: 25px;
+  color: #F1E4F3;
+  font-family: 'Oswald';
+}
+
+.status {
+  display: block;
+  position: absolute;
+  font-size: 23px;
+  font-weight: 300;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0px;
+  font-family: 'Oswald';
+  color: #F1E4F3;
+}
+
+.clicked:before {
+  display: block;
+  content: '';
+  opacity: 0;
+  background: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  -webkit-animation: click 0.4s linear 1;
+          animation: click 0.4s linear 1;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: wait;
+}
+
+@-webkit-keyframes click {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes click {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
