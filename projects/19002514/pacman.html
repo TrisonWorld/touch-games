@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Pacman</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/games.css">
+		<script src="assets/js/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				CountDown();
+			});
+		</script>
+
+   	</head>
+    
+    <body>
+
+		<div id="page">
+		    <embed src="../../pacman/index.htm" onerror="alert('Error internet conexion');" />
+		</div>
+
+
+		<div class="navbar white">
+		    <i id="home" class="fa fa-home"></i>
+		    <i class="fa fa-clock-o"></i> <span id="time">180</span> s  <i id="reset" class="fa fa-undo"></i>
+		</div>
+
+		<script src="assets/js/games.js"></script>
+	</body>
+</html>
